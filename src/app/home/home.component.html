@@ -1,115 +1,95 @@
 <div style="text-align:center">
-    <h1 class="title">Superheroes Tactical Battle</h1>
+    <h1 class="title">Puissance4 Superheroes Battle</h1>
 </div>
 <!--<div>
     <img class="logo" width="1000" alt="Angular Logo" src="http://cdn.wegotthiscovered.com/wp-content/uploads/DC-Marvel-Movies-Discussion-Differences.jpg">
 </div>!-->
-<h2>Choose your Marvel heroes : </h2>
+<h2>Choose your Superheroes team : </h2>
 <br>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
+            <div class="card" style="width: 18rem;" id = "236">
+                <h3 class="card-title">{{ heroes[236].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[236].images.sm}}" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
+            <div class="card" style="width: 18rem;" id = "79">
+                <h3 class="card-title">{{ heroes[79].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[79].images.sm}}" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
+            <div class="card" style="width: 18rem;" id = "115">
+                <h3 class="card-title">{{ heroes[115].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[115].images.sm}}" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
+            <div class="card" style="width: 18rem;" id = "226">
+                <h3 class="card-title">{{ heroes[226].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[226].images.sm}}" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">TAKE IT</a>
+                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <div class="col-12" style="text-align: center">
+    </div>
 </div>
 <br>
-<h2>Choose your DC Comics heroes : </h2>
 <br>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
+            <div class="card" style="width: 18rem;" id = "45">
+                <h3 class="card-title">{{ heroes[45].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[45].images.sm}}" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-                <h3 class="card-title">BATMAN</h3>
-                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a7/Batman_Lee.png/250px-Batman_Lee.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">TAKE IT</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                        <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12" style="text-align: center">
-            <button routerLink="/game" type="button" class="btn btn-info btn-lg">Let's hang them!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id = "52">
+                <h3 class="card-title">{{ heroes[52].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[52].images.sm}}" alt="Card image cap">
+                <div class="card-body">
+                        <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id = "268">
+                <h3 class="card-title">{{ heroes[268].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[268].images.sm}}" alt="Card image cap">
+                <div class="card-body">
+                        <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;" id = "149">
+                <h3 class="card-title ">{{ heroes[149].name}}</h3>
+                <img class="card-img-top" src="{{ heroes[149].images.sm}}" alt="Card image cap">
+                <div class="card-body">
+                        <button  routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
