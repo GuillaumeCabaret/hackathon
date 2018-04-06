@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css']
 })
-export class GameComponent {
+export class GameComponent implements OnInit {
   title = 'Superheroes game';
 heroes;
 constructor(private http: HttpClient) {

@@ -4,92 +4,15 @@
 <!--<div>
     <img class="logo" width="1000" alt="Angular Logo" src="http://cdn.wegotthiscovered.com/wp-content/uploads/DC-Marvel-Movies-Discussion-Differences.jpg">
 </div>!-->
-<h2>Choose your Superheroes team : </h2>
+<h2>Choose your Superheroe: </h2>
 <br>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "236">
-                <h3 class="card-title">{{ heroes[236].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[236].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-                </div>
+        <div class="col-md-3" *ngFor="let hero of randomHeroes">
+            <div class="card" style="width: 18rem; margin-bottom : 20px;" id="236" (click)="selectHero(hero)" [ngClass]="{'selected': hero.selected}">
+                <h3 class="card-title" style="text-align:center; padding-top: 5px; margin-bottom: 5px;">{{ hero.name}}</h3>
+                <img class="card-img-top" src="{{ hero.images.sm}}" alt="Card image cap">
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "79">
-                <h3 class="card-title">{{ heroes[79].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[79].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "115">
-                <h3 class="card-title">{{ heroes[115].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[115].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "226">
-                <h3 class="card-title">{{ heroes[226].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[226].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                    <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="col-12" style="text-align: center">
     </div>
 </div>
-<br>
-<br>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "45">
-                <h3 class="card-title">{{ heroes[45].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[45].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                        <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "52">
-                <h3 class="card-title">{{ heroes[52].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[52].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                        <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "268">
-                <h3 class="card-title">{{ heroes[268].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[268].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                        <button routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;" id = "149">
-                <h3 class="card-title ">{{ heroes[149].name}}</h3>
-                <img class="card-img-top" src="{{ heroes[149].images.sm}}" alt="Card image cap">
-                <div class="card-body">
-                        <button  routerLink="/game" type="button" class="btn btn-info btn-lg">Take it !</button>
-                </div>
-            </div>
-        </div>
-    </div>
