@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/superhero-background-1.jpg');
+    background-size: cover;
+}

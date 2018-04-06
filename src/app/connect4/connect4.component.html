@@ -1,0 +1,32 @@
+<div class="row game">
+    <div class="col-md-3 side">
+        <img alt="Player1" [src]="playersService.players[0].images.md" [ngClass]="{'active': turn === 1}" />
+        <div class="progress">
+            <div class="progress-bar" [ngClass]="'w-' + getScore(1)">
+            </div>
+        </div>
+        {{ getScore(1) + ' / 100'}}
+        <img class="win-left" src="https://img.fireden.net/v/image/1506/79/1506796773364.png" [ngClass]="{'opened': scores[1] <= 0}">
+    </div>
+
+    <div class="connect4 col-md-6">
+        <div class="line" *ngFor="let line of grid">
+            <div class="cell" *ngFor="let cell of line; let i = index" (click)="cellClicked(i)">
+                <div class="image-cropper" *ngIf="cell != 0">
+                    <img [src]="getPlayerImg(cell)" class="rounded" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 side">
+        <img alt="Player2" [src]="playersService.players[1].images.md" [ngClass]="{'active': turn === 2}" />
+        <div class="progress">
+            <div class="progress-bar" [ngClass]="'w-' + getScore(2)">
+            </div>
+        </div>
+        {{ getScore(2) + ' / 100'}}
+        <img class="win-right" src="https://img.fireden.net/v/image/1506/79/1506796773364.png" [ngClass]="{'opened': scores[0] <= 0}">
+    </div>
+
+</div>

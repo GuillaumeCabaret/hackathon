@@ -1,0 +1,18 @@
+<div style="text-align:center">
+    <h1 class="title">Puissance4 Superheroes Battle</h1>
+</div>
+<!--<div>
+    <img class="logo" width="1000" alt="Angular Logo" src="http://cdn.wegotthiscovered.com/wp-content/uploads/DC-Marvel-Movies-Discussion-Differences.jpg">
+</div>!-->
+<h2>Choose your Superheroe: </h2>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let hero of randomHeroes">
+            <div class="card" style="width: 18rem; margin-bottom : 20px;" id="236" (click)="selectHero(hero)" [ngClass]="{'selected': hero.selected}">
+                <h3 class="card-title" style="text-align:center; padding-top: 5px; margin-bottom: 5px;">{{ hero.name}}</h3>
+                <img class="card-img-top" src="{{ hero.images.sm}}" alt="Card image cap">
+            </div>
+        </div>
+    </div>
+</div>

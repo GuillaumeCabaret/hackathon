@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "BEBAS.ttf";
+    src: url(assets/fonts/BEBAS.ttf);
+}
+
+.title {
+    font-family: "BEBAS.ttf";
+    font-size: 500%;
+    background-color: rgb(134, 14, 14);
+    color: white;
+    margin: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.card:active {
+    border: red solid 10px;
+}
+
+.card.selected {
+    border: red solid 10px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(232, 225, 239);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(232, 225, 239, 1) 50%, rgba(206, 194, 239, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(232, 225, 239, 1) 50%, rgba(206, 194, 239, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(232, 225, 239, 1) 50%, rgba(206, 194, 239, 1) 100%);
+}
+
+.container {
+    max-width: 600px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 2px;
+    border: 3px solid rgb(244, 242, 247);
+    border-radius: 10px;
+    width: 100px;
+    height: 155px;
+    background: url(https://d3hmvhl7ru3t12.cloudfront.net/img/hero-portrait-detailed/hero-portrait-detailed-bg-f2fded168cc47adb3996a3a9a015da500f0b74099df2f6a33735cce9dc99bd6fbbd4c9a5d225dd107fe9d88da61db05a8b455687c301e6545244753bc979b819.jpg);
+    text-align: center;
+    text-transform: uppercase;
+    transform: scale3d(1, 1, 1) skewX(-10deg);
+    overflow: hidden;
+    filter: drop-shadow(0 1px 4px rgba(10, 2, 12, 0.2));
+    transition: 90ms 20ms ease;
+}
+
+ul li:hover {
+    border-color: gold;
+    transform: scale3d(1.18, 1.18, 1) skewX(-10deg);
+    z-index: 1;
+}
+
+ul li img {
+    width: 120px;
+    position: absolute;
+    bottom: -16px;
+    right: -8px;
+    transform: translateZ(0) skewX(10deg);
+}
+
+.hero-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(244, 242, 247);
+}
+
+.hero-info p {
+    transform: translateZ(0) skewX(10deg);
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+#images {
+    text-align: center;
+}
