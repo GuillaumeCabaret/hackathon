@@ -12,7 +12,7 @@ export class Connect4Component implements OnInit {
 
   grid = [];
 
-  scores = [25, 100];
+  scores = [100, 100];
 
   turn = 1;
 
